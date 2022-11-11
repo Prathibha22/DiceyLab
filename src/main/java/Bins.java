@@ -2,6 +2,10 @@ import java.util.TreeMap;
 
 public class Bins {
 
+    public TreeMap<Integer, Integer> get_bins() {
+        return _bins;
+    }
+
     private TreeMap<Integer,Integer> _bins=new TreeMap<Integer, Integer>();
 
     public Bins(Integer firstBin, Integer lastBin){
@@ -15,5 +19,6 @@ public class Bins {
     public void incrementBin(Integer binNumber){
         _bins.put(binNumber,_bins.get(binNumber)+1);
     }
+
 
 }
